@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Podcast</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+</head>
+<body>
+<div id="player">
+	<h4><i class="material-icons">equalizer</i> Podcast</h4>
+	<div class="card">
+		<div class="card-image">
+			<a href="#" class="btn-floating btn-large halfway-fab">
+				<i class="material-icons" id="play-pause">play_arrow</i>
+			</a>
+		</div>
+			<div class="card-content">
+				<h5>Titulo:</h5>
+				<p class="artist">Artista:</p>
+				<div class="row valgin-wrapper">
+					<div class="col s2" id="current-duration">00:00</div>
+					<div class="col s6 range-field valign-wrapper">
+						<input type="range" min=0 max=0 id="seekbar" step="1">
+					</div>
+					<div class="col s2" id="total-duration">00:00</div>
+		            <div>
+		              <a href="#">
+		                <i class="material-icons" id="mute">volume_up</i>
+		              </a>
+		            </div>
+		            <div class="col s3 range-field valign-wrapper">
+		              <input id="vol-control" type="range" min="0" max="100" step="1" />
+		            </div>
+				</div>
+			</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<Script src="js/code.js" type="module"></Script>
+</body>
+</html>
